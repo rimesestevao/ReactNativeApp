@@ -1,10 +1,11 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Button, Alert, View } from 'react-native';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Button onPress={()=>Alert.alert('Login')}title='Login'/>
+      <Button onPress={()=>Alert.alert('Cadastro')}title='Cadastro'/>
       <StatusBar style="auto" />
     </View>
   );
