@@ -1,5 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Button, Alert, View } from 'react-native';
+import { StyleSheet, Text, Button, Alert, View } from 'react-native';
+import Main from './Pages/Main';
 
 export default function App() {
   return (
@@ -7,6 +8,7 @@ export default function App() {
       <Button onPress={()=>Alert.alert('Login')}title='Login'/>
       <Button onPress={()=>Alert.alert('Cadastro')}title='Cadastro'/>
       <StatusBar style="auto" />
+      <Main/>
     </View>
   );
 }
