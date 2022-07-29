@@ -1,12 +1,12 @@
 import { StyleSheet, Button, View, Text, Alert } from 'react-native'
 import React from 'react'
 
-const Main = () => {
+const Main = ({Usuário, horas, temp}) => {
   return (
     <View>
       <View>
-            <Text style={styles.title}>Bom dia, !</Text>
-            <Text style={styles.subtitle}>São  e faz  Graus.</Text>
+            <Text style={styles.title}>Bom dia, {Usuário}!</Text>
+            <Text style={styles.subtitle}>São {horas} e faz {temp} Graus.</Text>
         </View>
         <View style={styles.linha}>
             <Button onPress={()=>Alert.alert('Formulário')}title='Ir para o Formulário'/>
